@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Your Name | Personal Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Magarevedant</div>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#aboutme">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-toggle" id="navToggle" tabindex="0">&#9776;</div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO SECTION WITH COVER BACKGROUND AND BOTTOM-LEFT CONTENT -->
+    <section id="hero" class="hero-section">
+      <div class="hero-bg"></div>
+      <div class="hero-content-corner">
+        <h1>Your Name</h1>
+        <p class="hero-desc">A passionate developer crafting modern web experiences.</p>
+      </div>
+    </section>
+
+    <section id="aboutme" class="about-section">
+      <div class="about-container">
+        <img src="profile.jpg" alt="Your profile picture" class="profile-img" />
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>
+            Hi! I'm Your Name, a creative and driven developer with a passion for building impactful digital experiences. I enjoy working on modern web projects, learning new technologies, and collaborating with like-minded people. Let's build something awesome together!
+          </p>
+          <ul class="about-list">
+            <li><strong>Location:</strong> Your City, Country</li>
+            <li><strong>Interests:</strong> Coding, Design, Open Source, Gaming</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Project One</h3>
+          <p>A brief description of your project. What problem does it solve, and what tech did you use?</p>
+          <a href="#" class="project-link" target="_blank">View Project</a>
+        </div>
+        <div class="project-card">
+          <h3>Project Two</h3>
+          <p>Describe another project here. Mention any cool features or achievements!</p>
+          <a href="#" class="project-link" target="_blank">View Project</a>
+        </div>
+        <div class="project-card">
+          <h3>Project Three</h3>
+          <p>Showcase more of your work. Add as many cards as you want!</p>
+          <a href="#" class="project-link" target="_blank">View Project</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <h2>Contact</h2>
+      <form id="contactForm" novalidate>
+        <div class="form-group">
+          <label for="name">Name<span class="required">*</span></label>
+          <input type="text" id="name" name="name" required autocomplete="off">
+          <small class="error-msg"></small>
+        </div>
+        <div class="form-group">
+          <label for="email">Email<span class="required">*</span></label>
+          <input type="email" id="email" name="email" required autocomplete="off">
+          <small class="error-msg"></small>
+        </div>
+        <div class="form-group">
+          <label for="message">Message<span class="required">*</span></label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <small class="error-msg"></small>
+        </div>
+        <button type="submit" class="cta-btn">Send Message</button>
+        <div id="formMsg" class="form-msg"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
