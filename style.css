@@ -96,7 +96,7 @@ header {
 .hero-bg {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: url('IMG_20250521_092245.jpg') right center/cover no-repeat;
+  background: url('IMG_20250521_092245.jpg') 70% center/cover no-repeat;
   filter: grayscale(1) brightness(0.7);
   z-index: 1;
 }
